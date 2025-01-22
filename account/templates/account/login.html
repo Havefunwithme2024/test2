@@ -1,0 +1,26 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="d-flex justify-content-center">
+        <div class="col-4" style="margin-top: 150px;">
+            <form action="" method="post" class="bg-white p-3">
+                {% csrf_token %}
+
+                <label for="">{{ login_form.label.username }}</label>
+                <p class="py-2">{{ login_form.username }}</p>
+
+                <label for="">{{ login_form.label.password }}</label>
+                <p class="py-2">{{ login_form.password }}</p>
+
+                <button type="submit" class="btn btn-warning">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

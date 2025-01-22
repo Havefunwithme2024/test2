@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load account_tag %}
+
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="d-flex justify-content-evenly">
+        <div class="col-4">
+            <div class="card">
+                <ul class="list-group">
+                    <li class="list-group-item fs-5">Имя: {% update_none profile.first_name %}</li>
+                    <li class="list-group-item fs-5">Фамилия: {% update_none profile.last_name %}</li>
+                    <li class="list-group-item fs-5">Возраст: {% update_none profile.age %}</li>
+                    <li class="list-group-item fs-5">Тариф: {% update_none profile.tariff %}</li>
+                </ul>
+                <div class="d-flex justify-content-between p-2">
+                    <a href="{% url 'edit_profile_active' %}" class="btn btn-warning">Изменить данные профиля</a>
+                    <a href="{% url 'logout_active' %}" class="btn btn-danger">Выйти из аккаунта</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <ul class="list-group">
+                <li class="list-group-item fs-5">Кол-во избранных статей: {{ favorite_count }}</li>
+                <li class="list-group-item fs-5">Кол-во оставленных комментариев: {{ comment_count }}</li>
+                <li class="list-group-item fs-5">Кол-во опубликованных товаров: {{ item_count }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock content %}

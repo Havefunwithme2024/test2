@@ -1,0 +1,128 @@
+
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.templatemonster.com%2Fru%2Fcategory%2Ffree-furniture-website-templates%2F&psig=AOvVaw3WTLWgqn_cDLDRi5QNYDFz&ust=1737548328148000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDZpojmhosDFQAAAAAdAAAAABAE') no-repeat center center / cover;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+
+.header-custom {
+    background-color: #146fcf;
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+
+.categories {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Category list styling */
+.category-list {
+    display: flex;
+    gap: 50px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styling with smooth transition */
+.custom-card {
+    background-color: #d6eaff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+
+.custom-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.category-item {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+
+.category-item:hover {
+    color: blue;
+}
+
+
+.custom-card-detail {
+    margin: 70px 0;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 15px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    background-color: #d6eaff;
+}
+
+.custom-item-list {
+    background-color: #d6eaff;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+}
+
+
+.accordion-custom {
+    background-color: #a0cbf9;
+    padding: 16px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.comment-header-custom {
+    background-color: #5998e7;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+
+
+.comment-body-custom {
+    background-color: #85bbff;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.custom-form {
+    background-color: #5998e7;
+    font-size: 17px;
+    padding: 6px 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+
+.custom-form:focus-visible {
+    background-color: #5998e7;
+    border-color: #146fcf;
+    outline: none;
+}
